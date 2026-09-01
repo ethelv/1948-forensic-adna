@@ -32,16 +32,16 @@ Read preprocessing and mapping were run via nf-core/eager 2.4.0 + Sentieon; the 
 
 Tool and data citations, as in the manuscript:
 
-- AdapterRemoval v2 — Schubert M, et al. *BMC Research Notes* 9, 88 (2016).
-- bwa — Li H, et al. *Bioinformatics* 25, 1754–1760 (2009).
-- mapDamage2 — Jónsson H, et al. *Bioinformatics* 29, 1682–1684 (2013).
-- ATLAS — Link V, et al. *bioRxiv* 105346 (2017). https://doi.org/10.1101/105346
-- contamMix — Fu Q, et al. *Current Biology* 23, 553–559 (2013).
-- pileupCaller (SequenceTools) — Schiffels S. *SequenceTools* (2024).
-- SmartPCA (EIGENSOFT) — Patterson N, et al. *PLoS Genetics* 2, e190 (2006).
-- ADMIXTURE — Alexander DH, et al. *Genome Research* 19, 1655–1664 (2009).
-- AADR reference panel — Mallick S, et al. *Scientific Data* 11, 182 (2024).
-- Ashkenazi reference genomes — Lencz T, et al. *Human Genetics* (2018). https://doi.org/10.1007/s00439-018-1886-z
+- AdapterRemoval v2: Schubert M, et al. *BMC Research Notes* 9, 88 (2016).
+- bwa: Li H, et al. *Bioinformatics* 25, 1754–1760 (2009).
+- mapDamage2: Jónsson H, et al. *Bioinformatics* 29, 1682–1684 (2013).
+- ATLAS: Link V, et al. *bioRxiv* 105346 (2017). https://doi.org/10.1101/105346
+- contamMix: Fu Q, et al. *Current Biology* 23, 553–559 (2013).
+- pileupCaller (SequenceTools): Schiffels S. *SequenceTools* (2024).
+- SmartPCA (EIGENSOFT): Patterson N, et al. *PLoS Genetics* 2, e190 (2006).
+- ADMIXTURE: Alexander DH, et al. *Genome Research* 19, 1655–1664 (2009).
+- AADR reference panel: Mallick S, et al. *Scientific Data* 11, 182 (2024).
+- Ashkenazi reference genomes: Lencz T, et al. *Human Genetics* (2018). https://doi.org/10.1007/s00439-018-1886-z
 
 Not cited in the manuscript: Kraken2, pong, seqtk.
 
