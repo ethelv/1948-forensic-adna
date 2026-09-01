@@ -1,33 +1,28 @@
 # Ancestry inference of a mid-20th-century femur
 
-Low-coverage whole-genome sequencing of a single skeletal sample was mapped to the
-human reference, pseudo-haploid genotyped on the Human Origins SNP panel, and its
-ancestry inferred by PCA and ADMIXTURE against the AADR reference panel, plus
-uniparental markers (mtDNA, Y) and contamination estimation.
+This repository holds the **custom analysis and plotting code** only. Steps performed
+with standard tools at default settings are not included as scripts (see *Not in this
+repo* below). Input data (BAM/FASTQ, the AADR reference panel, EIGENSTRAT intermediates,
+the Kraken2 database) are not distributed; each script has a short editable path block.
 
-Each numbered folder is one analysis step. Scripts contain a short editable path block
-at the top; **input data are not included** (BAM/FASTQ, the AADR v54.1 Human Origins
-panel, the Kraken2 database, and intermediate EIGENSTRAT files).
-
-## Pipeline
+## Contents
 
 | folder | step | output |
 |--------|------|--------|
-| `01_preprocessing/` | AdapterRemoval -> bwa mem (SE, hs37d5) -> ATLAS soft-clip | mapped, deduplicated BAM |
-| `02_coverage_sex/`  | per-chromosome coverage & sex inference | **Figure 1** |
-| `03_damage/`        | mapDamage post-mortem damage profile | **Figure S1** |
-| `04_genotyping/`    | pileupCaller pseudo-haploid calls on the HO panel | EIGENSTRAT genotypes |
-| `05_pca/`           | SmartPCA projection onto the AADR panel + plot | **Figure 2** |
-| `06_admixture/`     | ADMIXTURE K=5-8 + plot | **Figure 3** (K6), **Figure S2** (K7,K8) |
-| `07_uniparental/`   | Haplogrep3 (mtDNA), YLeaf (Y), contamMix (contamination) | haplogroups, contamination |
-| `08_ashkenazi_lowSNP_pca/` |project 544 Ashkenazi genomes onto the same PCA | supplementary figure |
-| `09_unmapped_taxonomy/`    |Kraken2 taxonomy of the unmapped reads | supplementary result |
+| `02_coverage_sex/` | per-chromosome coverage & sex inference (`figure1_coverage.ipynb`) | **Figure 1** |
+| `04_genotyping/`   | pileupCaller pseudo-haploid calls on the Human Origins panel | EIGENSTRAT genotypes |
+| `05_pca/`          | SmartPCA projection onto the AADR panel + plot (`figure2_pca.ipynb`) | **Figure 2** |
+| `06_admixture/`    | reference filtering + ADMIXTURE K=5-8 + plot (`plot_admixture.py`) | **Figure 3** (K6), **Figure S2** (K7,K8) |
+| `08_ashkenazi_lowSNP_pca/` | project 544 Ashkenazi genomes onto the same PCA | supplementary figure |
+| `09_unmapped_taxonomy/`    | Kraken2 taxonomy of the unmapped reads | supplementary result |
 
-## Software
+## Not in this repo (standard tools, default settings)
 
-bwa, samtools, bedtools, AdapterRemoval v2, ATLAS, mapDamage2, EIGENSOFT (mergeit,
-smartpca), pileupCaller (sequenceTools), PLINK, ADMIXTURE, pong, Haplogrep3, YLeaf,
-contamMix, Kraken2, seqtk; Python 3 (numpy, pandas, matplotlib, seaborn).
+- **Read preprocessing & mapping:** AdapterRemoval v2 -> bwa mem (SE, hs37d5) -> dedup ->
+  ATLAS soft-clip, run via nf-core/eager 2.4.0 + Sentieon.
+- **DNA damage (Figure S1):** mapDamage2, single-stranded mode.
+- **Uniparental markers & contamination:** Haplogrep3 (mtDNA -> T1a2), YLeaf
+  (Y -> G-FT276712), contamMix (MAP contamination 0.00048).
 
 ## Reference data
 
@@ -37,3 +32,7 @@ contamMix, Kraken2, seqtk; Python 3 (numpy, pandas, matplotlib, seaborn).
 - Ashkenazi genomes: Lencz et al. 2018.
 - Kraken2 DB: PlusPF (benlangmead.github.io/aws-indexes/k2).
 
+## Software
+
+samtools, bedtools, EIGENSOFT (mergeit, smartpca), pileupCaller (sequenceTools), PLINK,
+ADMIXTURE, pong, Kraken2, seqtk; Python 3 (numpy, pandas, matplotlib, seaborn).
