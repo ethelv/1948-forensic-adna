@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# Taxonomic classification of the UNMAPPED reads (reviewer response).
-# ~99.5% of reads do not map to the human reference; a random subsample is
-# classified with Kraken2 to show they are environmental / soil-microbiome DNA.
 set -euo pipefail
 
 # ---- edit for your setup ----

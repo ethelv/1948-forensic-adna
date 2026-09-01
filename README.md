@@ -43,7 +43,7 @@ Tool and data citations, as in the manuscript:
 - AADR reference panel — Mallick S, et al. *Scientific Data* 11, 182 (2024).
 - Ashkenazi reference genomes — Lencz T, et al. *Human Genetics* (2018). https://doi.org/10.1007/s00439-018-1886-z
 
-Revision tools not cited in the manuscript: Kraken2, pong, seqtk.
+Not cited in the manuscript: Kraken2, pong, seqtk.
 
 ## Software
 

@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# Read mapping to human reference genome (hs37d5) using BWA mem
-# Paper: "we mapped both merged and unmerged reads to the human reference genome (hs37d5)
-#         using bwa mem in single-end mode with default parameters"
-
 REF=/path/to/hs37d5.fa
 SAMPLE=JD206
 THREADS=8

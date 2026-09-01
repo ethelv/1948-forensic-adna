@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# Contamination estimation using contamMix
-# Paper: "no evidence of contamination (using contamMix), with a MAP contamination
-#         rate estimate of 0.00048 (2.5%-97.5% quantiles: 0.000077 to 0.0112)"
-
 SAMPLE=JD206
 BAM=${SAMPLE}_libmerged_rg_rmdup.bam
 REF_MT=/path/to/mt_reference.fa      # mitochondrial reference (rCRS)

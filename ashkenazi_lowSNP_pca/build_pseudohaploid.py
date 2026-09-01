@@ -1,16 +1,4 @@
 #!/usr/bin/env python
-"""
-Build a pseudo-haploid EIGENSTRAT .geno for the 544 Lencz AJ genomes over the
-35,968 HO SNPs that were covered in JD206.
-
-For each SNP x sample: draw ONE random allele (mimicking a single ancient read).
- - Sites present in the AJ cohort VCF: draw from the called diploid GT.
- - Sites absent from the VCF: the 30x genome is hom-ref -> drawn allele = b37 ref.
-Encoding (EIGENSTRAT, count of allele a1 = JD206.snp col5):
-   drawn == a1 -> 2 ; drawn == a2 -> 0 ; missing / third allele -> 9
-All 35,968 sites are on the b37 forward strand (verified: 0 strand flips),
-so VCF alleles match HO alleles directly.
-"""
 import random, sys
 
 random.seed(1948)

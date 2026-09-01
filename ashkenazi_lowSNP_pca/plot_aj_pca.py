@@ -1,11 +1,4 @@
 #!/usr/bin/env python
-"""
-Supplementary AJ low-SNP PCA, drawn in the SAME style as the manuscript's Figure 2:
-grey Europe/Caucasus backdrop, tab20-coloured Middle-Eastern / N.African / Jewish
-reference groups with distinct markers, and an arrow to sample 1948 (no pasted marker).
-Overlaid: the 544 Lencz Ashkenazi genomes (35k SNPs, pseudo-haploid) and the full-SNP
-HO Ashkenazi reference, so the reviewer comparison is visible in the paper's own layout.
-"""
 import numpy as np, pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -68,7 +61,7 @@ ho = df[df.Group == "Jew_Ashkenazi.HO"]
 plt.scatter(ho.PC1, ho.PC2, color="#08306b", marker="*", s=200, zorder=6,
             edgecolor="white", linewidth=0.8, label=f"Ashkenazi (HO, full SNPs, n={len(ho)})")
 
-# sample 1948 — true point + arrow (Reviewer #2: no pasted marker)
+# sample 1948 — true point + arrow
 s48 = df[df.Group == "Unknown"]
 if not s48.empty:
     px, py = s48.PC1.iloc[0], s48.PC2.iloc[0]

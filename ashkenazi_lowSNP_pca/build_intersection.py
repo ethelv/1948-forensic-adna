@@ -1,12 +1,4 @@
 #!/usr/bin/env python
-"""
-Build the merged EIGENSTRAT for smartpca as the SNP INTERSECTION = exactly the
-35,966 target autosomal SNPs. Stream the paper's merged.geno (HO+JD206) and, for
-each SNP row whose rsid is a target SNP, write the merged genotypes followed by the
-544 AJ pseudo-haploid genotypes. Output rows are in merged.snp order.
-Allele orientation verified identical (0 flips) between merged.snp and AJ.snp.
-Avoids a full 30-min mergeit and the 12.5 GB union file.
-"""
 import sys
 BASE = ".."
 AJ = "."

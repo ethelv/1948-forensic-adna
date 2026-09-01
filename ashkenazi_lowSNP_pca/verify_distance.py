@@ -1,11 +1,4 @@
 #!/usr/bin/env python
-"""
-Verify that sample 1948 (JD206) is farther, in Euclidean distance over (PC1, PC2),
-from the Ashkenazi cluster centroid than EVERY Ashkenazi genome.
-
-Distance in (PC1,PC2) is invariant to smartpca's arbitrary per-axis sign, so no
-axis re-orientation is needed. Uses the canonical 544-sample projection.
-"""
 import pandas as pd, numpy as np
 
 EVEC = "./merged_aj_pca.evec"

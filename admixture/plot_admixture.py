@@ -1,15 +1,3 @@
-"""
-Recreate the paper's pong-style ADMIXTURE figures (Figure 3 = K6, Figure S2 = K7,K8)
-in matplotlib, but drawing the target genome (JD206 / "1948 sample") as a WIDE,
-clearly-visible band instead of a 1-px bar (reviewer #2).
-
-Faithful to the pong run that made the paper figures:
-  pong -m filemap -i ind2pop_cleaned.txt -n pop_order.txt -s 1
-  - default 9-colour palette (K_max = 8 <= 9)
-  - population order from pop_order.txt
-  - individuals sorted within each population (membership gradient)
-  - major-mode representative run per K: K6r1 (Fig 3); K7r1, K8r2 (Fig S2)
-"""
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
