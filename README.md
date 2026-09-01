@@ -1,8 +1,5 @@
 # Ancestry inference of a mid-20th-century femur (sample 1948 / JD206)
 
-Code for the analyses and figures in *"Ancestry inference by whole-genome sequencing
-of a middle-20th-century femur from Central Israel"* (Vol, Waldman, ..., Carmi).
-
 Low-coverage whole-genome sequencing of a single skeletal sample was mapped to the
 human reference, pseudo-haploid genotyped on the Human Origins SNP panel, and its
 ancestry inferred by PCA and ADMIXTURE against the AADR reference panel, plus
