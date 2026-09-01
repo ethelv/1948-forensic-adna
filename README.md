@@ -1,4 +1,4 @@
-# Ancestry inference of a mid-20th-century femur (sample 1948 / JD206)
+# Ancestry inference of a mid-20th-century femur
 
 Low-coverage whole-genome sequencing of a single skeletal sample was mapped to the
 human reference, pseudo-haploid genotyped on the Human Origins SNP panel, and its
