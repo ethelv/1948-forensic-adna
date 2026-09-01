@@ -1,0 +1,20 @@
+geno1: JD206_filtered_filtered.geno
+snp1:  JD206_filtered_filtered.snp
+ind1:  JD206_filtered_filtered.ind
+
+geno2: v54.1.p1_HO_public.geno
+snp2:  v54.1.p1_HO_public.snp
+ind2:  v54.1.p1_HO_public.ind
+
+genooutfilename: merged.geno
+snpoutfilename:  merged.snp
+indoutfilename:  merged.ind
+
+outputformat: EIGENSTRAT
+
+docheck: YES
+strandcheck: YES
+hashcheck: YES
+malexhet: YES
+allowdups: YES
+

@@ -1,0 +1,9 @@
+genotypename: merged_aj.geno
+snpname:      merged_aj.snp
+indivname:    merged_aj.ind
+evecoutname:  merged_aj_pca.evec
+evaloutname:  merged_aj_pca.eval
+poplistname:  ../pops_list
+numoutevec:   10
+lsqproject:  YES
+numoutlieriter: 0

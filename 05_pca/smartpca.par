@@ -1,0 +1,9 @@
+genotypename: merged.geno
+snpname:      merged.snp
+indivname:    merged.ind
+evecoutname:  merged_pca.evec
+evaloutname:  merged_pca.eval
+poplistname:  pops_list
+numoutevec:   10
+lsqproject:  YES 
+numoutlieriter: 0
