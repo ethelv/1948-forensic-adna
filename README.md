@@ -23,8 +23,8 @@ panel, the Kraken2 database, and intermediate EIGENSTRAT files).
 | `05_pca/`           | SmartPCA projection onto the AADR panel + plot | **Figure 2** |
 | `06_admixture/`     | ADMIXTURE K=5-8 + plot | **Figure 3** (K6), **Figure S2** (K7,K8) |
 | `07_uniparental/`   | Haplogrep3 (mtDNA), YLeaf (Y), contamMix (contamination) | haplogroups, contamination |
-| `08_ashkenazi_lowSNP_pca/` | *(revision)* project 544 Ashkenazi genomes at ~35k SNPs onto the same PCA | supplementary figure |
-| `09_unmapped_taxonomy/`    | *(revision)* Kraken2 taxonomy of the unmapped reads | supplementary result |
+| `08_ashkenazi_lowSNP_pca/` |project 544 Ashkenazi genomes onto the same PCA | supplementary figure |
+| `09_unmapped_taxonomy/`    |Kraken2 taxonomy of the unmapped reads | supplementary result |
 
 ## Software
 
