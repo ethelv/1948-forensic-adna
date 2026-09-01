@@ -9,12 +9,12 @@ the Kraken2 database) are not distributed; each script has a short editable path
 
 | folder | step | output |
 |--------|------|--------|
-| `02_coverage_sex/` | per-chromosome coverage & sex inference (`figure1_coverage.ipynb`) | **Figure 1** |
-| `04_genotyping/`   | pileupCaller pseudo-haploid calls on the Human Origins panel | EIGENSTRAT genotypes |
-| `05_pca/`          | SmartPCA projection onto the AADR panel + plot (`figure2_pca.ipynb`) | **Figure 2** |
-| `06_admixture/`    | reference filtering + ADMIXTURE K=5-8 + plot (`plot_admixture.py`) | **Figure 3** (K6), **Figure S2** (K7,K8) |
-| `08_ashkenazi_lowSNP_pca/` | project 544 Ashkenazi genomes onto the same PCA | supplementary figure |
-| `09_unmapped_taxonomy/`    | Kraken2 taxonomy of the unmapped reads | supplementary result |
+| `coverage_sex/` | per-chromosome coverage & sex inference (`figure1_coverage.ipynb`) | **Figure 1** |
+| `genotyping/`   | pileupCaller pseudo-haploid calls on the Human Origins panel | EIGENSTRAT genotypes |
+| `pca/`          | SmartPCA projection onto the AADR panel + plot (`figure2_pca.ipynb`) | **Figure 2** |
+| `admixture/`    | reference filtering + ADMIXTURE K=5-8 + plot (`plot_admixture.py`) | **Figure 3** (K6), **Figure S2** (K7,K8) |
+| `ashkenazi_lowSNP_pca/` | project 544 Ashkenazi genomes onto the same PCA | supplementary figure |
+| `unmapped_taxonomy/`    | Kraken2 taxonomy of the unmapped reads | supplementary result |
 
 ## Not in this repo (standard tools, default settings)
 
