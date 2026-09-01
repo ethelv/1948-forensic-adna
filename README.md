@@ -34,12 +34,6 @@ contamMix, Kraken2, seqtk; Python 3 (numpy, pandas, matplotlib, seaborn).
 - Reference genome: hs37d5 (GRCh37 + decoy).
 - Reference panel: AADR **v54.1** Human Origins (`v54.1.p1_HO_public`), 597,573 SNPs;
   446 West-Eurasian / North-African genomes used for projection.
-- Ashkenazi genomes (revision): Lencz et al. 2018.
+- Ashkenazi genomes: Lencz et al. 2018.
 - Kraken2 DB: PlusPF (benlangmead.github.io/aws-indexes/k2).
 
-## Notes
-
-- Genotyping and coverage use MAPQ 30 and 10 respectively (see the scripts).
-- SmartPCA uses least-squares projection (`lsqproject: YES`), no outlier iterations.
-- ADMIXTURE figures are drawn with the pong major-mode run per K.
-- Supplementary figure numbering (S1/S2/...) should be checked against the final manuscript.
